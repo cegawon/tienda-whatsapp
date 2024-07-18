@@ -91,16 +91,19 @@
         <div class="cart-modal" id="cartModal">
             <div class="cart-content">
                 <h2>Carrito de Compras</h2>
-                <ul id="cartItems"></ul>
+                <ul class="productos" id="cartItems"></ul>
                 <p>Total: $ <span id="cartTotal">0</span></p>
                 <label for="deliveryType">Tipo de entrega:</label>
                 <select id="deliveryType">
                     <option value="A domicilio">A domicilio</option>
                     <option value="Recoger en sitio">Recoger en sitio</option>
                 </select>
-                <button id="sendOrder">Enviar pedido</button>
-                <button id="clearCart">Limpiar carrito</button>
-                <button id="closeCart">Ocultar</button>
+                <div class="botones">
+                    <button class="botones" id="sendOrder">Enviar pedido</button>
+                    <button id="clearCart">Limpiar carrito</button>
+                    <button id="closeCart">Ocultar</button>
+                </div>
+               
             </div>
         </div>
     </div>
