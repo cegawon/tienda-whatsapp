@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Yummy Place</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <img src="imagenes/logo.jpg"  alt="Cocktails" class="header-image">
+            <h1 class="titulo">MY TIENDITA</h1>
+            <p class="domicilio">Domicilio Gratis por Compras Superiores a $50.000</p>
+        </header>
+        <nav>
+            <ul>                
+                <li class="subtitulos"><a href="#" class="filter-category" data-category="pollo">Pollo</a></li>
+                <li class="subtitulos"><a href="#" class="filter-category" data-category="cerdo">Cerdo</a></li>
+                <li class="subtitulos"><a href="#" class="filter-category" data-category="otros">Otros</a></li>
+            </ul>
+        </nav>
+        <main>      
+            <section class="menu-category" data-category="pollo">
+                <h2>Pollo</h2>                
+                <div class="menu-item" data-name="Pollo Manaurero" data-price="10000" data-category="pollo">
+                    <img src="imagenes/pollo.jpg" alt="Pollo Manaurero">
+                    <div class="menu-item-details">
+                        <h3>Pollo Manaurero <span class="price">$ 10.000 Kl</span></h3>
+                        <p class="comentario">Miso de sal dulce con mantequilla</p>
+                        <p class="allergens">Esquisito Pollo Semi criollo alimentado con maiz.</p>
+                        <button class="add-to-cart">Agregar</button>
+                    </div>
+                </div>
+                <div class="menu-item" data-name="Pechuga" data-price="13000" data-category="pollo">
+                    <img src="imagenes/pechuga.png" alt="Pechuga">
+                    <div class="menu-item-details">
+                        <h3>Pechuga<span class="price">$ 13.000 Kl</span></h3>
+                        <p class="comentario">Curry vegetariano con calabaza</p>
+                        <p class="allergens">Deliciosa Pechuga blanca o Manaurera por el mismo precio</p>
+                        <button class="add-to-cart">Agregar</button>
+                    </div>
+                </div>                
+            </section>
+            <section class="menu-category" data-category="cerdo">
+                <h2>Cerdo</h2>     
+                <div class="menu-item" data-name="Punta Chuleta" data-price="15000" data-category="cerdo">
+                    <img src="imagenes/chuleta.png">
+                    <div class="menu-item-details">
+                        <h3>Punta chuleta<span class="price">$ 15.000 Kl</span></h3>
+                        <p class="comentario">aqui los comentarios</p>
+                        <p class="allergens">Delicioso corte de cerdo Bajo en Grasa.</p>
+                        <button class="add-to-cart">Agregar</button>
+                    </div>
+                </div>
+                <div class="menu-item" data-name="Lomo Importado" data-price="19000" data-category="cerdo">
+                    <img src="imagenes/lomo.jpg" alt="Burger Royal">
+                    <div class="menu-item-details">
+                        <h3>Lomo Importado<span class="price">$ 19.000 Kl</span></h3>
+                        <p class="comentario">Hamburguesa de tocino con queso suizo</p>
+                        <p class="allergens">Rico Corte de Cerdo Bajo en Grasa.</p>
+                        <button class="add-to-cart">Agregar</button>
+                    </div>
+                </div>               
+            </section>
+            <section class="menu-category" data-category="otros">
+                <h2>Otros</h2>                         
+                <div class="menu-item" data-name="Queso" data-price="16000" data-category="otros">
+                    <img src="imagenes/queso.png" alt="Venado tostado">
+                    <div class="menu-item-details">
+                        <h3>Queso <span class="price">$ 16.000 Kl</span></h3>
+                        <p class="comentario">Carne de venado con vinagre de manzana</p>
+                        <p class="allergens">Rico Queso costeño Semi Duro Bajo en Sal.</p>
+                        <button class="add-to-cart">Agregar</button>
+                    </div>
+                </div>
+                <div class="menu-item" data-name="Huevos" data-price="14000" data-category="otros">
+                    <img src="imagenes/huevos.png" alt="Huevos">
+                    <div class="menu-item-details">
+                        <h3>Huevos<span class="price">$ 14.000</span></h3>
+                        <p class="comentario">Carne de venado con vinagre de manzana</p>
+                        <p class="allergens">Huevos Frescos Tipo AA</p>
+                        <button class="add-to-cart">Agregar</button>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <button class="cart-button" id="cartButton">🛒
+            <div class="cart-total-bubble" id="cartTotalBubble">0</div>
+        </button>
+        <div class="cart-modal" id="cartModal">
+            <div class="cart-content">
+                <h2>Carrito de Compras</h2>
+                <ul id="cartItems"></ul>
+                <p>Total: $ <span id="cartTotal">0</span></p>
+                <label for="deliveryType">Tipo de entrega:</label>
+                <select id="deliveryType">
+                    <option value="A domicilio">A domicilio</option>
+                    <option value="Recoger en sitio">Recoger en sitio</option>
+                </select>
+                <button id="sendOrder">Enviar pedido</button>
+                <button id="clearCart">Limpiar carrito</button>
+                <button id="closeCart">Ocultar</button>
+            </div>
+        </div>
+    </div>
+          <footer>
+            <p>Dirección: Valledupar</p>
+            <p>Teléfono: 3008334903</p>
+        </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
